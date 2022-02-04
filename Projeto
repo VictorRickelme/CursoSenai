@@ -1,0 +1,166 @@
+CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+
+}
+
+h1{
+    margin: 180PX 0px 0px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 64px;
+}
+#paragrafo1{
+margin: 20px 0px 50px auto;
+}
+
+article{
+    margin:20px 0px 60px auto ;
+    padding: 20px 15px 120px ;
+    background-color: rgb(93, 93, 93);
+    display:block;
+    
+}
+a{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: #000 ;
+    display: block;
+    background-color:salmon(93, 93, 93));
+    text-align: center; 
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px 1000px 20px 0px;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    margin: 42px 0px 42px 0px;
+}
+
+h3{
+    font-family: 'Merriweather', serif;
+    margin: 0px 0px 10px 0px;
+    font-size: 23px;
+    color: white;
+}
+p{
+    font-family: 'Rubik', sans-serif;
+}
+#titulo1{
+    color:white
+}
+
+#titulo2{
+    color:darkgray
+}
+
+
+#cabecalho {
+background-color: #3C184E;
+width: 100%;
+height: 50px;
+display: flex;
+/* flex-direction: column; */
+
+}
+#css-secao{
+    background-color: darkgray;
+    width: 100%;
+    height: 800px;
+display: flex;
+}
+.embrulho{
+    /* background-color: darkgray; */
+    width: 1120px;
+    margin: 0 auto;
+}
+#rodape{    
+    text-align: center;
+    background-color: darkgray;
+}
+#logo{
+
+}
+
+----------------------------------------------------------------------------------
+
+HTML
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="embrulho" >
+        <i class="icone" >@</i>
+        <h3 id="logo">Dolorshit</h3>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="embrulho">
+            <h1>Projeto</h1>
+            <p id="paragrafo1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, ex temporibus voluptates labore laborum
+                officia. Necessitatibus quas fuga unde incidunt veniam, provident voluptates. Consectetur molestiae
+                saepe alias neque blanditiis reprehenderit?</p>
+
+                <a href="#">Clique Aqui</a>
+            </div>
+        </section>
+        <section id="css-secao">
+            <div class="embrulho">
+                <h2 id="titulo1">Titulo secao1</h2>
+                <article>
+                    <h3>Artigo01</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cumque consequatur cum quibusdam error enim saepe, iste quasi maiores doloribus eius natus harum ipsam nostrum asperiores, adipisci qui reprehenderit a!</p>
+                </article>
+
+                <article>
+                    <h3>Artigo01</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cumque consequatur cum quibusdam error enim saepe, iste quasi maiores doloribus eius natus harum ipsam nostrum asperiores, adipisci qui reprehenderit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cumque consequatur cum quibusdam error enim saepe, iste quasi maiores doloribus eius natus harum ipsam nostrum asperiores, adipisci qui reprehenderit a!a! </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="embrulho">
+                <h2 id="titulo2">Titulo secao2</h2>
+                <article>
+                    <h3>Artigo01</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cumque consequatur cum quibusdam error enim saepe, iste quasi maiores doloribus eius natus harum ipsam nostrum asperiores, adipisci qui reprehenderit a!</p>
+                </article>
+
+                <article>
+                    <h3>Artigo01</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor minus quod vero nostrum minima amet, doloribus odio eum in laborum nobis totam perspiciatis ut soluta exercitationem non molestiae eligendi eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cumque consequatur cum quibusdam error enim saepe, iste quasi maiores doloribus eius natus harum ipsam nostrum asperiores, adipisci qui reprehenderit a!</p>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+    <footer id="rodape">
+        <p> &copy; Todos os direitos reservados </p>
+
+    </footer>
+</body>
+
+</html>
