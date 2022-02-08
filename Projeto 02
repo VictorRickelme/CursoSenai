@@ -1,0 +1,100 @@
+HTML 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 02 - Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="secao-inicial">
+        <header>
+            <nav class="wrapper flex">
+                <a href="#"><h3 id="logo">Projeto Landing Page</h3></a>
+                <div id="links-secoes">
+                    <a href="#">seção 1</a>
+                    <a href="#">seção 2</a>
+                </div>
+                <a href="#" class="btn_menu">botão</a>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
+
+CSS 
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito:wght@600;700;800&display=swap');    
+
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Embrulho/Wrapper + Flexbox*/
+
+.wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo secão inicial */
+
+#secao-inicial{
+    background-color: blueviolet;
+    padding: 32px 0;
+    color: #fff;
+}
+
+#logo{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+#links-secoes{
+    font-family: 'Lexend Deca' sans-serif;
+    font-size: 16px;
+}
+
+#links-secoes > a {
+    /* background-color: rgb(255, 0, 191); */
+    padding: 10px 15px;
+}                 
+
+#links-secoes > a:hover{
+    text-decoration: underline;
+}
+
+.btn_menu{
+    font-family: 'Lexend Deca' sans-serif;
+    font-size: 16px;
+    color: #EA0F78;
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+.btn_menu:hover{
+    opacity: 0.9;
+    background-color: #EA0F78;
+    color: #fff
+}
