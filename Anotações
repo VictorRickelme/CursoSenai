@@ -1,0 +1,77 @@
+COMO COMEÇAR:
+
+Criar arquivo index.html 
+- Escrever o código html 
+Criar arquivo style.css
+- Colocar o código ( <link rel="stylesheet" href="style.css"> ) no html
+- Resetar no css: ( Limpar os dados do navegador ), ( O * significa todas as tags).
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+- Escrever o código css
+
+width=device-width ( tela cliente )
+
+Semantica = significado/importancia
+
+<img src="./ = pra imagem que tá na mesma pasta do meu arquivo ../ pra imagem que tá fora da pasta do meu arquivo 
+
+! e enter para ir direto
+
+Semantica = tem um significado
+2 tipos
+- Em linha (in-line)
+- Em caixa (block) 
+
+<!-- comentario -->
+
+ol = tem numeração(identificação
+ul = tem blocos (identificação)
+li = um item que vai fazer parte da lista
+a = clicavel link
+
+(li>a)*4 para ir tudo de uma vez
+
+ALT + SHIFT + F = Alinhar o código.
+
+* NAO REPETIR IMAGEM 
+
+background-repeat: no-repeat;
+
+* PARA SER REDIRECIONADO PARA OUTRA PÁGINA EM <A> </A> ( ANCORA )
+
+target="blank"
+
+CSS ( Cascadind Style Sheet )
+
+Ordem de hierarquia
+
+- Navegador
+- Nossa 
+-- Externa 
+-- Interna ( bonitinha )
+-- inline ( gambiarra/na frente da linha )
+-- IMPORTANT ( SE TIVER NO CODIGO ELE PASSA NA FRENTE DOS OUTROS )
+
+identificador 
+
+id = # ou seja #id tal coisa
+class = . ou seja .class tal coisa
+
+** Comentário 
+
+/; 
+
+** Selecionar segunda tag
+
+:nth-child(2)
+
+
+Media Querie 
+
+COMO PEGAR O SCRIPT DO FONT AWESOME
+
+fontawesome > kits > pega script > joga o script no head
