@@ -1,0 +1,229 @@
+CSS - 
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito:wght@600;700;800&display=swap');   
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Embrulho/Wrapper + Flexbox (Coisas reaproveitáveis) */
+
+.wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+/* Estilo Seção Inicial (Menu + Banner) */
+
+#secao-inicial{
+    padding: 0px 0;
+    color: #fff;
+    background: linear-gradient(#DB49C4 100%, #BC3EDB 100%);
+}
+
+#logo{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 25px 185px;
+}
+
+#links-secoes{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    margin: 25px 120px;
+    padding: 0px 10px; 
+}
+
+#links-secoes > a{
+    padding: 40px 15px;
+    margin: 25px 50px;
+}
+
+#links-secoes > a:hover{
+    text-decoration: underline;
+}
+
+/* -------------- */
+
+#secao-artigos{
+    background-color: #F3F5F7;
+    padding: 64px 0;
+}
+
+#cards{
+    flex-direction: column;
+}
+
+.card{
+    width: 70%;
+    min-width: 310px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+.cabecalho_card{
+    margin-bottom: 20px;
+}
+
+.cabecalho_card > p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    color: #B6B6B6;
+}
+.cabecalho_card > i{
+    color: #EA2181;
+    font-size: 25px;
+}
+
+.conteudo_card > h4{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #313131;
+    margin-bottom: 5px;
+}
+
+.conteudo_card > p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+    color: #B6B6B6;
+    line-height: 25px;
+}
+
+
+
+
+/* Hover coração preenchido */
+.cabecalho_card > i:hover::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f004";
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Imagem Tucano */
+
+#imagem-tucano{
+    max-width: 400px;
+    width: 40%;
+    min-width: 400px;
+}
+
+/* Seção final */
+
+#secao-final{
+background-color: #F3F5F7;
+padding: 64px 100px;
+margin: auto;
+}
+
+/* Rodapé */
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #F6F6F6;
+    background-color: #BC3EDB;
+}
+
+HTML 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Daora</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/74f5d82ab4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="secao-inicial">
+        <header>
+            <nav class="wrapper flex">
+                <a href="#"><h3 id="logo">Blog</h3></a>
+                <div id="links-secoes">
+                    <a href="#">blog</a>
+                    <a href="#">contato</a>
+                </div>
+                <!-- <a href="#" class="btn btn_menu">botão</a> -->
+                </nav>
+        </header>
+        <main>
+            <section id="secao-artigos">
+                <div class="wrapper flex">
+                    <div id="cards" class="flex">
+                        <article class="card">
+                            <header class="cabecalho_card flex">
+                                <p>02 de jul, 2021</p>
+                                <i class="far fa-heart"></i>
+                            </header>
+                            <div class="conteudo_card">
+                                <h4>Dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum commodi in quidem neque veniam nulla, excepturi at sequi dolorem, optio quis itaque fuga quisquam alias doloribus soluta blanditiis maiores!</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <header class="cabecalho_card flex">
+                                <p>02 de jul, 2021</p>
+                                <i class="far fa-heart"></i>
+                            </header>
+                            <div class="conteudo_card">
+                                <h4>Consectetur adipisicing elit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vestibulum vestibulum auctor est. </p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <header class="cabecalho_card flex">
+                                <p>02 de jul, 2021</p>
+                                <i class="far fa-heart"></i>
+                            </header>
+                            <div class="conteudo_card">
+                                <h4>Vestibulum vestibulum auctor est.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum commodi in quidem neque veniam nulla, excepturi at sequi dolorem, optio quis itaque fuga quisquam alias doloribus soluta blanditiis maiores!</p>
+                            </div>
+                        </article>
+                    
+                            <article class="card">
+                                <header class="cabecalho_card flex">
+                                    <p>02 de jul, 2021</p>
+                                    <i class="far fa-heart"></i>
+                                </header>
+                                <div class="conteudo_card">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum commodi in quidem neque veniam nulla, excepturi at sequi dolorem, optio quis itaque fuga quisquam alias doloribus soluta blanditiis maiores!</p>
+                                </div>
+                            </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="secao-final">
+            <div id="imagem-tucano">
+                <img src="./img/tucano.jfif" alt="Tucano bonito">
+            </div>
+        </section>
+        <footer>
+            <p>Essa página foi inspirada no Desafio 1 do <a href="https://www.instagram.com/iuricode/" target="_blank">@iuricode</a> para fins educacionais.</p>
+        </footer>
+</body>
+</html> 
