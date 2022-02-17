@@ -6,30 +6,77 @@ HTML
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 02 - Landing Page</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Projeto Blog</title>
+    <!-- Estilização Global -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Estilização Especifica -->
+    <link rel="stylesheet" href="./css/home.css">
+    
+    <script src="https://kit.fontawesome.com/74f5d82ab4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="secao-inicial">
-        <header>
-            <nav class="wrapper flex">
-                <a href="#"><h3 id="logo">Projeto Landing Page</h3></a>
-                <div id="links-secoes">
-                    <a href="#">seção 1</a>
-                    <a href="#">seção 2</a>
+    <header id="cabecalho"> 
+        <nav class="wrapper flex">
+            <h3>Blog</h3>
+            <div class="links_menu">
+                <a href="./index.html" class="link_ativo">blog</a>
+                <a href="./pages/contato.html">contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper" id="postagens">
+            <article class="post">
+                <header class="cabecalho_post flex">
+                    <p>14 de fev, 2022</p>
+                    <i class="far fa-heart"></i>
+                </header>
+                <div class="conteudo_post">
+                    <h2>Titulo post 1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias molestiae, quasi tenetur qui sint dolor nemo culpa? Alias, animi ea deleniti excepturi est adipisci aperiam vitae mollitia nulla omnis itaque.</p>
+
                 </div>
-                <a href="#" class="btn_menu">botão</a>
-            </nav>
-        </header>
-    </div>
+            </article>
+                <article class="post">
+                <header class="cabecalho_post flex">
+                    <p>14 de fev, 2022</p>
+                    <i class="far fa-heart"></i>
+                </header>
+                <div class="conteudo_post">
+                    <h2>Titulo post 1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias molestiae, quasi tenetur qui sint dolor nemo culpa? Alias, animi ea deleniti excepturi est adipisci aperiam vitae mollitia nulla omnis itaque.</p>
+
+                </div>
+            </article>
+            <div class="post_img">
+                <div class="img"></div>
+                <article class="post artigo_img">
+                    <header class="cabecalho_post flex">
+                        <p>14 de fev, 2022</p>
+                        <i class="far fa-heart"></i>
+                    </header>
+                    <div class="conteudo_post">
+                        <h2>Titulo post 1</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias molestiae, quasi tenetur qui sint dolor nemo culpa? Alias, animi ea deleniti excepturi est adipisci aperiam vitae mollitia nulla omnis itaque.</p>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; Todos os direitos reservados. </p>
+    </footer>
 </body>
 </html>
 
-CSS 
+CSS ----------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito:wght@600;700;800&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* CSS Reset */
+/* @font-face{ 
+    font-family: Rickelme;
+    src: url(./MacLemon_PersonalUseOnly.ttf);
+} */
 
 *{
     margin: 0;
@@ -37,16 +84,21 @@ CSS
     box-sizing: border-box;
 }
 
+h3, h2, p, a, label,
+input::placeholder, textarea::placeholder,
+input, textarea, button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
 a{
     text-decoration: none;
     color: inherit;
 }
 
-/* Embrulho/Wrapper + Flexbox*/
-
 .wrapper{
-    width: 90%;
-    max-width: 1440px;
+    width: 95%; /* quando bate em 900 ele nao cresce mais */
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -56,45 +108,182 @@ a{
     align-items: center;
 }
 
-/* Estilo secão inicial */
-
-#secao-inicial{
-    background-color: blueviolet;
+#cabecalho{
+    background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%);
     padding: 32px 0;
     color: #fff;
 }
 
-#logo{
-    font-family: 'Nunito', sans-serif;
-    color: #fff;
-    font-size: 16px;
+.links_menu > a{
+    padding: 12px 15px; 
 }
 
-#links-secoes{
-    font-family: 'Lexend Deca' sans-serif;
-    font-size: 16px;
+.links_menu > a:hover{
+    opacity: 0.5; /* Mudar de cor quando passar o mouse por cima */
 }
 
-#links-secoes > a {
-    /* background-color: rgb(255, 0, 191); */
-    padding: 10px 15px;
-}                 
-
-#links-secoes > a:hover{
-    text-decoration: underline;
+.link_ativo{
+    text-decoration: underline; /* Ficar com linha em baixo */
 }
 
-.btn_menu{
-    font-family: 'Lexend Deca' sans-serif;
-    font-size: 16px;
-    color: #EA0F78;
-    background-color: #fff;
-    padding: 10px 22px;
-    border-radius: 5px;
+main{
+    background-color: #f3f5f7; /* Cor do site atrás */
+    padding: 64px 0; /*Separação do titulo */
+    min-height: 90vh; /* 100% da tela */
+
 }
 
-.btn_menu:hover{
-    opacity: 0.9;
-    background-color: #EA0F78;
+
+
+footer{
+    text-align: center;
+    padding: 5px 0;
+    background-color: #BC3EDB;
     color: #fff
 }
+
+CONTATO CSS ---------------------------------------
+
+/* Estilzação especifica do contato.html */
+
+.textos_contato > h2{
+    color: #313131;
+    margin-bottom: 32px;
+}
+
+.textos_contato > p{
+    color: #b6b6b6;
+    font-size: 18px;
+}
+
+#form_contato {
+    margin-top: 64px;
+}
+
+.inputs_form {
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.input_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    margin-bottom: 32px;
+}
+
+.input_textarea {
+    width: 100%;
+}
+
+.input_textarea>textarea {
+    resize: none;
+    height: 120px;
+}
+
+.input_texto>input, .input_texto>textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BC3FDB;
+    background-color: #f3f5f7;
+    font-size: 18px;
+    color: #852d9b;
+}
+
+.input_texto>input:focus, .input_texto>textarea:focus {
+    outline: none;
+    border-color: #852d9b;
+}
+
+.input_texto>label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #BC3FDB;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #D79AE9;
+}
+
+#btn_enviar {
+    padding: 22px 42px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%);
+    border: none;
+    color: #f3f5f7;
+}
+
+#btn_enviar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .input_texto{
+        width: 100%;
+    }
+    #btn_enviar{
+        width: 100%;
+    }
+}
+
+CONTATO HTML ---------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Projeto Blog</title>
+    <!-- Estilização Global -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Estilização Especifica -->
+    <link rel="stylesheet" href="../css/contato.css">
+    <!-- Link FontAwesome (Icones) -->
+    <script src="https://kit.fontawesome.com/74f5d82ab4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="cabecalho"> 
+        <nav class="wrapper flex">
+            <h3>Logo Blog</h3>
+            <div class="links_menu">
+                <a href="../index.html">blog</a>
+                <a href="./contato.html" class="link_ativo">contato</a> 
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="secao_contato" class="wrapper">
+            <div class="textos_contato">
+                <h2>Entre em contato com a gente!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit suscipit, quos ducimus natus necessitatibus reiciendis asperiores dicta, similique cum iusto est eos! Corporis alias fugiat dolore consequatur? Neque, cum molestias?</p>
+            </div>
+            <form id="form_contato">
+                <div class="inputs_form flex">
+                    <div class="input_texto">
+                        <label for="nome_usuario">Nome</label>
+                        <input id="nome_usuario" type="text" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="input_texto">
+                        <label for="email_usuario">E-mail</label>
+                        <input id="email_usuario" type="email" placeholder="Digite o seu email">
+                    </div>
+                    <div class="input_texto input_textarea">
+                        <label for="mensagem_usuario">Mensagem</label>
+                        <textarea id="mensagem_usuario" placeholder="Digite sua mensagem" maxlength="280"></textarea>
+                    </div>
+                </div>
+                <button type="button" id="btn_enviar">Enviar mensagem!</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
