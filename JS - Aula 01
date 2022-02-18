@@ -23,6 +23,10 @@ HTML ---------------------------------------------
 
     <h2 id="data"></h2>
     <p id="paragrafo" ondblclick="mudarParagrafo()" onmousedown="clicarParagrafo()"onmouseup="soltarParagrafo()">Clique aqui para me mudar</p>
+
+    <div id="quadrado" style="width: 150px; height: 150px; background-color: #9e9e9e;"></div>
+    <button onclick="mudarCorDiv()">Clique para mudar a cor do quadrado<div></div></button>
+    <button onclick="mudarCorDiv2()">Clique para mudar a cor novamente</button>
 </body>
 </html>
 
@@ -54,4 +58,12 @@ function clicarParagrafo(){
 
 function soltarParagrafo(){
     document.getElementById("paragrafo").innerHTML = "Você soltou o mouse"
+}
+
+function mudarCorDiv(){
+    document.getElementById("quadrado").style.backgroundColor = "#ff0000"
+}
+
+function mudarCorDiv2(){
+    document.getElementById("quadrado").style.backgroundColor = "#00ff00"
 }
