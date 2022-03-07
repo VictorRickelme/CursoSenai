@@ -1,0 +1,330 @@
+HTML 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Prouni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="botaonoturno">  
+        <h3 class= "botaonoturno">Modo noturno</h3>
+        <div class="switch__container botaonoturno">
+            <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+            <label id="noturno" for="switch-shadow"></label>
+          </div>
+        </div>
+
+        <div id="nomedosite">
+        <h2>CALCULADORA</h2>
+        <img src="prouni-300x147.png" alt="">
+    </div>
+    
+
+    </header>
+    <div class="banner1">
+    <img src="6 SCENE.svg" alt="" class="banner">
+    </div>
+
+    <main>
+        <h2>Membros da família com renda:</h2>
+        <label for="membros"></label>
+
+        <select id="pessoas_familia" name="membros" >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <section>
+            <h3>Renda (R$):</h3>
+            <div class="nomes">
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:"> 
+                    <input class="renda" type="text" name="" id="renda1" placeholder="R$">
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:">
+                    <input class="renda" type="text" name="" id="renda2" placeholder="R$">
+                </div>
+                
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:">
+                    <input class="renda" type="text" name="" id="renda3" placeholder="R$">
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:">
+                    <input class="renda" type="text" name="" id="renda4" placeholder="R$">
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:">
+                    <input class="renda" type="text" name="" id="renda5" placeholder="R$">
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="Coloque o nome:">
+                    <input class="renda" type="text" name="" id="renda6" placeholder="R$">
+                </div>
+
+                                    </div>
+
+                                    
+                               
+            </div>
+        </section>
+                <div>
+                    <button type="button" onclick="calcularMedia()">Calcular</button>
+                    <h2>Resultados</h2>
+                    <h3 id="resultado_media"></h3>
+                    <h3 id="situacao_aluno"></h3>
+                    <h3 id="retorno_funcao"></h3>    
+                </div>
+        <section>
+            <h3>Total da sua renda familiar:</h3>
+            <input class="total_renda" type="text" name="" id="">
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
+
+CSS
+
+/* Estilo iOS */
+
+.switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch--shadow + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.switch--shadow + label:after { /*bolinha*/
+  width: 31px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow:checked + label:before {
+  background-color: #525252;
+}
+.switch--shadow:checked + label:after {
+  transform: translateX(30px);
+}
+
+#noturno{
+    height: 31px;
+    width: 60px;
+}
+
+.banner1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    width: 800px;
+}
+
+
+body{
+    background-color:silver;
+}
+
+#nomedosite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#botaonoturno{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: rgb(201, 236, 238);
+}
+
+*{margin: 0;}
+
+.nomes{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.rendas{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+JS 
+
+//declarando as constantes que iremos usar no código
+const campo1 = document.querySelector("#renda1");
+const campo2 = document.querySelector("#renda2");
+const campo3 = document.querySelector("#renda3");
+const campo4 = document.querySelector("#renda4");
+const campo5 = document.querySelector("#renda5");
+const campo6 = document.querySelector("#renda6");
+const retornoFuncao = document.querySelector("#retorno_funcao");
+const resultadoMedia = document.querySelector("#resultado_media");
+const situacaoAluno = document.querySelector("#situacao_aluno");
+const pessoasFamilia = document.querySelector("#pessoas_familia")
+
+
+
+function calcularMedia() {
+    if (campo1.value == '') {
+        retornoFuncao.innerHTML = "";
+        campo1.focus();
+    } else {
+        if (campo2.value == '') {
+            retornoFuncao.innerHTML = "";
+            campo2.focus();
+        } else {
+            if (campo3.value == '') {
+                retornoFuncao.innerHTML = "";
+                campo3.focus();
+            } else {
+                if (campo4.value == '') {
+                    retornoFuncao.innerHTML = "";
+                    campo4.focus();
+                } else {
+                    if (campo5.value == '') {
+                        retornoFuncao.innerHTML = "";
+                        campo5.focus();
+                    } else {
+                        if (campo6.value == '') {
+                            retornoFuncao.innerHTML = "";
+                            campo6.focus();
+                        }
+                        
+                        retornoFuncao.innerHTML = "";
+
+                        let valor1 = Number(campo1.value);
+                        let valor2 = Number(campo2.value);
+                        let valor3 = Number(campo3.value);
+                        let valor4 = Number(campo4.value);
+                        let valor5 = Number(campo5.value);
+                        let valor6 = Number(campo6.value);
+                        let numeroFamilia = Number(pessoasFamilia.value);
+
+
+
+                        let media = (valor1 + valor2 + valor3 + valor4 + valor5 + valor6) / numeroFamilia;
+
+                        resultadoMedia.innerHTML = `A renda famíliar é de ${media.toFixed(2)}`;
+
+                        classificarAluno(media, numeroFamilia);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+function classificarAluno(rendaFamiliar, qntPessoas) {
+
+    let familia1 = 1818;
+    let familia2 = 3336;
+    let familia3 = 5434;
+    let familia4 = 7272;
+    let familia5 = 9090;
+    let familia6 = 10908;
+
+    
+    if (qntPessoas == 1) {
+        if (rendaFamiliar >= familia1) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+    else if (qntPessoas == 2) {
+        if (rendaFamiliar >= familia2) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+
+    else if (qntPessoas == 3) {
+        if (rendaFamiliar >= familia3) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+
+    else if (qntPessoas == 4) {
+        if (rendaFamiliar >= familia4) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+
+    else if (qntPessoas == 5) {
+        if (rendaFamiliar >= familia5) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+
+    else if (qntPessoas == 6) {
+        if (rendaFamiliar >= familia6) {
+            situacaoAluno.innerHTML = "O aluno foi reprovado no processo do ProUni por conta da sua renda ultrapassar o limite";
+        }
+    }
+
+
+    else {
+        situacaoAluno.innerHTML = "O aluno foi aprovado no processo do ProUni";
+    }
+
+
+
+}
