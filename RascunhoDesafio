@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixSports - Desafio final</title>
+    <script src="https://kit.fontawesome.com/8f6071224f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div id="btn_home">
+        <a href=""><i class="fa-solid fa-house-chimney"></i>Home</a>
+    </div>
+    <div id="talvezireiusarporcontadosicones">
+        <h3>MixSports</h3>
+        <a href=""><i class="fa-solid fa-football"></i></a>
+        <a href=""><i class="fa-solid fa-volleyball"></i></a>
+        <a href=""><i class="fa-solid fa-futbol"></i></a>
+        <a href=""><i class="fa-solid fa-basketball"></i></a>
+    </div>
+    <div id="btn_contato">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Contatos</h3>
+    </div>
+</header>
+<body>
+    <div id="conteudo_basquete">
+        <h3>Basquete</h3>
+        <p>Confira as últimas notícias sobre o mundo do basquetebol, aqui você encontra novidades da NBA, NBB e etc....</p>
+    </div>
+    <div id="conteudo_futebolAmericano">
+        <h3>Futebol Americano</h3>
+        <p>Fique por dentro do esporte da bola oval, no MixSports você encontrará notícias e novidades sobre a NFL e muito mais!</p>
+    </div>
+    <div id="conteudo_futebol">
+        <h3>Futebol</h3>
+        <p>Confira as notícias do esporte mais famoso do mundo, aqui você encontra notícias e informações de ligas, jogadores e clubes de todo o mundo!</p></p>
+    </div>
+    <div id="conteudo_golfe">
+        <h3>Golfe</h3>
+        <p>Saiba mais sobre um dos esportes onde precisa ter muita paciência, habilidade e agilidade! Aqui você fica por dentro de tudo que envolve o golfe.</p>
+    </div>
+    <div id="conteudo_beisebol">
+        <h3>Beisebol</h3>
+        <p>Fique por dentro de todas as novidades da MLB ( Major League Beisebol ), esporte emocionante e divertido!</p>
+    </div>
+    <div id="conteudo_sobreNos">
+        <h3>Sobre Nós</h3>
+        <p>Somos uma página especializada em notícias de esportes, dentro do nosso site você encontra desde o futebol até o golfe! Nascemos no ano de 2014 no intuito de trazer notícias rápidas e práticas para nossos leitores.</p>
+    </div>
+    <div id="conteudo_final">
+        <h3>MixSports</h3>
+        <p>Seu site de informações e notícias sobre o mundo esportivo</p>
+        <div id="redes_sociais">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div id="estrelas_avaliacao">
+            <h2>Avalie nosso site:</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+</body>
+<footer>
+    <p> Copyright 2014 - 2022 MixSports &copy;</p>
+</footer>
+</html>
