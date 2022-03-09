@@ -1,3 +1,5 @@
+HTML ---------------------------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -72,3 +74,77 @@
     <p> Copyright 2014 - 2022 MixSports &copy;</p>
 </footer>
 </html>
+
+CSS -------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#conteudo_basquete{
+    background-image:url(./img/Imagem\ Basquete.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_futebolAmericano{
+    background-image:url(./img/Imagem\ Futebol\ Americano.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_futebol{
+    background-image:url(./img/Imagem\ Futebol.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_golfe{
+    background-image:url(./img/Imagem\ Golfe.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_beisebol{
+    background-image: url(./img/Imagem\ Baseball.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_sobreNos{
+    background-image: url(./img/imagem\ Sobre\ nós.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_final{
+    background-image: url(./img/image\ Rodapé.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+h3{
+    font-family: 'Red Rose', cursive;
+    font-size: 60;
+    color: #fff; 
+    background-size: cover;  
+}
+
+p{
+    font-family: 'Red Rose', cursive;
+    font-size: 60;
+    color: #fff;
+    background-size: cover;
+}
+
