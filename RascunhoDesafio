@@ -1,4 +1,4 @@
-HTML ---------------------------------------------------------------------------
+HTML HOME ------------------------------------------------------------------
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,10 +17,10 @@ HTML ---------------------------------------------------------------------------
             <i class="fa-solid fa-house-chimney"></i>
             <h3>Home</h3>
         </div>
-        
+
         <div id="links_site1">
             <div class="flex">
-                <a href="#">
+                <a href="./index.html">
                     <h3 id="logo">MixSports</h3>
                 </a>
                 <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a>
@@ -31,8 +31,8 @@ HTML ---------------------------------------------------------------------------
             </div>
         </div>
         <div class="flex">
-            
-            <a class="btn btn_menu" href="#">
+
+            <a class="btn btn_menu" href="./contatos.html">
                 <i class="fa-solid fa-envelope"></i>
                 <h3>Contatos</h3>
             </a>
@@ -42,66 +42,76 @@ HTML ---------------------------------------------------------------------------
 
 <body>
     <section id="secao-artigos">
-        <div id="conteudo_basquete">
+        <div id="conteudo_basquete" class="flex">
             <h3>Basquete</h3>
             <p>Confira as últimas notícias sobre o mundo do basquetebol, aqui você encontra novidades da NBA, NBB e
                 etc....</p>
         </div>
-        <div id="conteudo_futebolAmericano">
+        <div id="conteudo_futebolAmericano" class="flex">
             <h3>Futebol Americano</h3>
             <p>Fique por dentro do esporte da bola oval, no MixSports você encontrará notícias e novidades sobre a NFL e
                 muito mais!</p>
         </div>
-        <div id="conteudo_futebol">
+        <div id="conteudo_futebol" class="flex">
             <h3>Futebol</h3>
             <p>Confira as notícias do esporte mais famoso do mundo, aqui você encontra notícias e informações de ligas,
                 jogadores e clubes de todo o mundo!</p>
             </p>
         </div>
-        <div id="conteudo_golfe">
+        <div id="conteudo_golfe" class="flex">
             <h3>Golfe</h3>
             <p>Saiba mais sobre um dos esportes onde precisa ter muita paciência, habilidade e agilidade! Aqui você fica
                 por dentro de tudo que envolve o golfe.</p>
         </div>
-        <div id="conteudo_beisebol">
+        <div id="conteudo_beisebol" class="flex">
             <h3>Beisebol</h3>
             <p>Fique por dentro de todas as novidades da MLB ( Major League Beisebol ), esporte emocionante e divertido!
             </p>
         </div>
-        <div id="conteudo_sobreNos">
+        <div id="conteudo_sobreNos" class="flex">
             <h3>Sobre Nós</h3>
             <p>Somos uma página especializada em notícias de esportes, dentro do nosso site você encontra desde o
                 futebol até o golfe! Nascemos no ano de 2014 no intuito de trazer notícias rápidas e práticas para
                 nossos leitores.</p>
         </div>
-    </div>
+        </div>
     </section>
 
-    <div id="conteudo_final">
-        <h3>MixSports</h3>
-        <p>Seu site de informações e notícias sobre o mundo esportivo</p>
-        <div id="redes_sociais">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div id="estrelas_avaliacao">
-            <h4>Avalie nosso site:</h4>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+    <div id="conteudo_final" class="flex">
+        <div id="embrulho-final" class="wrapper">
+
+            <div>
+                <h3>MixSports</h3>
+                <p>Seu site de informações e notícias sobre o mundo esportivo</p>
+            </div>
+            <div class="flex">
+
+                <div id="estrelas_avaliacao" class="flex">
+                    <h4>Avalie nosso site:</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div id="redes_sociais" class="flex">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
 <footer>
     <p> Copyright 2014 - 2022 MixSports &copy;</p>
 </footer>
+
 </html>
 
-CSS -------------------------------------------------------------------------------
+CSS HOME -------------------------------------------------------------------------------
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
 
@@ -155,11 +165,12 @@ i{
     color: #183153;
 }
 .btn:hover{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 body{
     background-color: #5a5a5a;
+    /* background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%); */
 }
 
 #secao-artigos{
@@ -172,6 +183,9 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #conteudo_futebolAmericano{
@@ -180,6 +194,10 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
 }
 
 #conteudo_futebol{
@@ -188,6 +206,9 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #conteudo_golfe{
@@ -196,6 +217,9 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #conteudo_beisebol{
@@ -204,6 +228,9 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #conteudo_sobreNos{
@@ -212,6 +239,10 @@ body{
     height: 810px;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;;
 }
 
 #conteudo_final{
@@ -221,11 +252,24 @@ body{
     background-size: cover;
 }
 
+#conteudo_final > #estrelas_avaliacao{
+    flex-wrap:  wrap;
+    align-content: flex-end;
+   
+}
+
 #estrelas_avaliacao > h4{
     color: #fff;
     font-family: 'Red Rose', cursive;
     font-size: 26;
     
+}
+
+#embrulho-final{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #estrelas_avaliacao > i{
@@ -235,6 +279,8 @@ body{
 #redes_sociais > a{
     color: #fff;
 }
+
+
 
 h3{
     font-family: 'Red Rose', cursive;
@@ -256,3 +302,296 @@ footer{
     color: #fff;
     background-color: #183153;
 }
+
+#secao-artigos  h3{
+    color: yellow;
+}
+
+#conteudo_basquete > h3{
+    font-size: 48px;
+}
+
+#conteudo_basquete > p{
+    font-size: 24px;
+}
+
+#conteudo_futebolAmericano >h3{
+    font-size: 48px;
+}
+
+#conteudo_futebolAmericano > p{
+    font-size: 24px;
+}
+
+#conteudo_futebol > h3{
+    font-size: 48px;
+}
+
+#conteudo_futebol > p{
+    font-size: 24px;
+}
+
+#conteudo_golfe > h3{
+    font-size: 48px;
+}
+
+#conteudo_golfe > p{
+    font-size: 24px;
+}
+
+#conteudo_beisebol > h3{
+    font-size: 48px;
+}
+
+#conteudo_beisebol > p{
+    font-size: 24px;
+}
+
+#conteudo_sobreNos > h3{
+    font-size: 60px;
+}
+
+#conteudo_sobreNos > p{
+    font-size: 30px;
+}
+
+HTML CONTATO ---------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f6071224f.js" crossorigin="anonymous"></script>
+    <title>MixSports - Contatos</title>
+    <link rel="stylesheet" href="./contatos.css">
+</head>
+<header id="cabecalho">
+    <nav class="wrapper flex">
+        <div class="flex">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h3>Home</h3>
+        </div>
+        
+        <div id="links_site1">
+            <div class="flex">
+                <a href="./index.html">
+                    <h3 id="logo">MixSports</h3>
+                </a>
+                <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a>
+                <a href="#conteudo_futebolAmericano"><i class="fa-solid fa-football"></i></a>
+                <a href="#conteudo_futebol"><i class="fa-solid fa-futbol"></i></a>
+                <a href="#conteudo_golfe"><i class="fa-solid fa-golf-ball-tee"></i></a>
+                <a href="#conteudo_beisebol"><i class="fa-solid fa-baseball"></i></a>
+            </div>
+        </div>
+        <div class="flex">
+            
+            <a class="btn btn_menu" href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Contatos</h3>
+            </a>
+        </div>
+    </nav>
+</header>
+<body>
+    <main>
+    <section id="secao_contato" class="wrapper">
+        <div class="textos_contato">
+            <h2>Entre em contato!</h2>
+            <p>Ajude nosso site, opine sobre o site, aponte algum erro que você achou no site e etc..</p>
+        </div>
+        <form id="form_contato">
+            <div class="inputs_form flex">
+                <div class="input_texto">
+                    <label for="nome_usuario"></label>
+                    <input id="nome_usuario" type="text" placeholder="Nome do usuário">
+                </div>
+                <div class="input_texto">
+                    <label for="motivo_contato"></label>
+                    <input id="motivo_contato" type="email" placeholder="Motivo do contato">
+                </div>
+                <div class="input_texto">
+                    <label for="email_usuario"></label>
+                    <input id="email_usuario" type="email" placeholder="E-mail do usuário">
+                </div>
+                <div class="input_texto input_textarea">
+                    <label for="mensagem_usuario"></label>
+                    <textarea id="mensagem_usuario" placeholder="Digite sua mensagem!" maxlength="280"></textarea>
+                </div>
+            </div>
+            <button type="button" id="btn_enviar">Enviar mensagem!</button>
+        </form>
+    </section>
+</main>
+</body>
+
+<footer>
+    <p> Copyright 2014 - 2022 MixSports &copy;</p>
+</footer>
+</html>
+
+CSS CONTATO -------------------------------------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+i{
+    margin: 5px
+}
+
+/* COPIADO DO PROF */
+
+.textos_contato>h2 {
+    color: #183153;
+    margin-bottom: 32px;
+    font-size: 26px;
+}
+
+.textos_contato>p {
+    color: #183153;
+    font-size: 18px;
+}
+
+#form_contato {
+    margin-top: 64px;
+}
+
+.inputs_form {
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.input_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    margin-bottom: 32px;
+}
+
+.input_textarea {
+    width: 100%;
+}
+
+.input_textarea>textarea {
+    resize: none;
+    height: 120px;
+}
+
+.input_texto>input, .input_texto>textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #183153;
+    background-color: #f3f5f7;
+    font-size: 18px;
+    color: #000;
+}
+
+.input_texto>input:focus, .input_texto>textarea:focus {
+    outline: none;
+    border-color: #183153;
+    ;
+}
+
+.input_texto>label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #183153;
+}
+
+input::placeholder, textarea::placeholder {
+    color: 183153;
+}
+
+#btn_enviar {
+    padding: 22px 42px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #183153;
+    border: none;
+    color: #f3f5f7;
+}
+
+#btn_enviar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* COPIADO DO PROF */
+
+
+.wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho {
+    padding: 32px 0;
+    color: #fff;
+    background-color: #183153;
+    position: sticky;
+    top: 0;
+
+}
+
+.btn{
+    font-family: 'Red Rose', cursive;
+    color: #183153;
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    width: fit-content;
+}
+
+.btn > h3{
+    color: #183153;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Red Rose', cursive;
+    color: #fff;
+    background-color: #183153;
+}
+
+h3{
+    font-family: 'Red Rose', cursive;
+    font-size: 600;
+    color: #fff; 
+     
+}
+
+p{
+    font-family: 'Red Rose', cursive;
+    font-size: 60;
+    color: #fff;
+}
+
+
