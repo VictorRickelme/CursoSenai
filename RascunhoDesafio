@@ -15,7 +15,9 @@ HTML HOME ------------------------------------------------------------------
     <nav class="wrapper flex">
         <div class="flex">
             <i class="fa-solid fa-house-chimney"></i>
-            <h3>Home</h3>
+            <a href="./index.html">
+                <h3>Home</h3>
+            </a>
         </div>
 
         <div id="links_site1">
@@ -31,8 +33,7 @@ HTML HOME ------------------------------------------------------------------
             </div>
         </div>
         <div class="flex">
-
-            <a class="btn btn_menu" href="./contatos.html">
+            <a class="btn" href="./contatos.html">
                 <i class="fa-solid fa-envelope"></i>
                 <h3>Contatos</h3>
             </a>
@@ -65,7 +66,7 @@ HTML HOME ------------------------------------------------------------------
         </div>
         <div id="conteudo_beisebol" class="flex">
             <h3>Beisebol</h3>
-            <p>Fique por dentro de todas as novidades da MLB ( Major League Beisebol ), esporte emocionante e divertido!
+            <p>Fique por dentro de todas as novidades da MLB (Major League Beisebol), esporte emocionante e divertido!
             </p>
         </div>
         <div id="conteudo_sobreNos" class="flex">
@@ -80,7 +81,7 @@ HTML HOME ------------------------------------------------------------------
     <div id="conteudo_final" class="flex">
         <div id="embrulho-final" class="wrapper">
 
-            <div>
+            <div id="paragrafo_final">
                 <h3>MixSports</h3>
                 <p>Seu site de informações e notícias sobre o mundo esportivo</p>
             </div>
@@ -95,10 +96,10 @@ HTML HOME ------------------------------------------------------------------
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div id="redes_sociais" class="flex">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a id="facebookIcon" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a id="instagramIcon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a id="twitterIcon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a id="youtubeIcon" href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -108,6 +109,8 @@ HTML HOME ------------------------------------------------------------------
 <footer>
     <p> Copyright 2014 - 2022 MixSports &copy;</p>
 </footer>
+
+</html>
 
 </html>
 
@@ -170,7 +173,7 @@ i{
 
 body{
     background-color: #5a5a5a;
-    /* background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%); */
+    background: linear-gradient(90deg, #222222e3 100%, #202020e1 100%);
 }
 
 #secao-artigos{
@@ -303,10 +306,6 @@ footer{
     background-color: #183153;
 }
 
-#secao-artigos  h3{
-    color: yellow;
-}
-
 #conteudo_basquete > h3{
     font-size: 48px;
 }
@@ -355,6 +354,42 @@ footer{
     font-size: 30px;
 }
 
+#paragrafo_final > h3{
+    font-size: 60px;
+}
+
+#paragrafo_final > p{
+    font-size: 25px;
+}
+
+#estrelas_avaliacao > h4{
+    font-size: 26px;
+}
+
+#estrelas_avaliacao > i{
+    font-size: 23px;
+}
+
+#redes_sociais > a{
+    font-size: 50px;
+}
+
+#facebookIcon:hover{
+    color: #1877F2;
+}
+
+#twitterIcon:hover{
+    color: #15B3F8;
+}
+
+#instagramIcon:hover{
+color: #F82CB3;
+}
+
+#youtubeIcon:hover{
+    color: #FF0707;
+}
+
 HTML CONTATO ---------------------------------------------------------------
 
 <!DOCTYPE html>
@@ -371,7 +406,9 @@ HTML CONTATO ---------------------------------------------------------------
     <nav class="wrapper flex">
         <div class="flex">
             <i class="fa-solid fa-house-chimney"></i>
-            <h3>Home</h3>
+            <a href="./index.html">
+                <h3>Home</h3>
+            </a>
         </div>
         
         <div id="links_site1">
@@ -379,16 +416,15 @@ HTML CONTATO ---------------------------------------------------------------
                 <a href="./index.html">
                     <h3 id="logo">MixSports</h3>
                 </a>
-                <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a>
-                <a href="#conteudo_futebolAmericano"><i class="fa-solid fa-football"></i></a>
-                <a href="#conteudo_futebol"><i class="fa-solid fa-futbol"></i></a>
-                <a href="#conteudo_golfe"><i class="fa-solid fa-golf-ball-tee"></i></a>
-                <a href="#conteudo_beisebol"><i class="fa-solid fa-baseball"></i></a>
+                <!-- <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a> -->
+                <!-- <a href="#conteudo_futebolAmericano"><i class="fa-solid fa-football"></i></a> -->
+                <!-- <a href="#conteudo_futebol"><i class="fa-solid fa-futbol"></i></a> -->
+                <!-- <a href="#conteudo_golfe"><i class="fa-solid fa-golf-ball-tee"></i></a> -->
+                <!-- <a href="#conteudo_beisebol"><i class="fa-solid fa-baseball"></i></a> -->
             </div>
         </div>
         <div class="flex">
-            
-            <a class="btn btn_menu" href="#">
+            <a class="btn" href="#">
                 <i class="fa-solid fa-envelope"></i>
                 <h3>Contatos</h3>
             </a>
@@ -421,7 +457,7 @@ HTML CONTATO ---------------------------------------------------------------
                     <textarea id="mensagem_usuario" placeholder="Digite sua mensagem!" maxlength="280"></textarea>
                 </div>
             </div>
-            <button type="button" id="btn_enviar">Enviar mensagem!</button>
+            <button type="button" id="btn_enviar" class="flex">Enviar mensagem!</button>
         </form>
     </section>
 </main>
@@ -451,12 +487,24 @@ i{
     margin: 5px
 }
 
+.wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* COPIADO DO PROF */
 
 .textos_contato>h2 {
     color: #183153;
     margin-bottom: 32px;
     font-size: 26px;
+    padding: 25px 0px 0px 0px;
 }
 
 .textos_contato>p {
@@ -515,7 +563,7 @@ i{
 }
 
 input::placeholder, textarea::placeholder {
-    color: 183153;
+    color: #183153;
 }
 
 #btn_enviar {
@@ -525,6 +573,7 @@ input::placeholder, textarea::placeholder {
     background-color: #183153;
     border: none;
     color: #f3f5f7;
+    margin: auto;
 }
 
 #btn_enviar:hover {
@@ -535,16 +584,7 @@ input::placeholder, textarea::placeholder {
 /* COPIADO DO PROF */
 
 
-.wrapper{
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 #cabecalho {
     padding: 32px 0;
@@ -585,6 +625,7 @@ h3{
     font-family: 'Red Rose', cursive;
     font-size: 600;
     color: #fff; 
+    padding: 10px;
      
 }
 
@@ -594,4 +635,8 @@ p{
     color: #fff;
 }
 
+main{
+    min-height: 82.1vh;
+    padding: 80px;
+}
 
