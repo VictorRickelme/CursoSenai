@@ -141,7 +141,7 @@ html{
 /* Ancoras do jeito certo */
 
 .ancoras{
-    padding-top: 300px;
+    padding-top: 300px; ( tamo vendo ainda )
 }
 
 /* Zerando a definição dos atributos */
