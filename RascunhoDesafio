@@ -1,8 +1,9 @@
 HTML HOME ------------------------------------------------------------------
 
+<!-- Links, titulo e etc.. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,9 @@ HTML HOME ------------------------------------------------------------------
     <script src="https://kit.fontawesome.com/8f6071224f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!--  Cabeçalho do Site -->
+
 <header id="cabecalho">
     <nav class="wrapper flex">
         <div class="flex">
@@ -41,35 +45,40 @@ HTML HOME ------------------------------------------------------------------
     </nav>
 </header>
 
+<!--  Corpo do Site -->
+
 <body>
+
+    <!-- Artigos com imagem e texto -->
+
     <section id="secao-artigos">
-        <div id="conteudo_basquete" class="flex">
+        <div id="conteudo_basquete" class="flex ancoras">
             <h3>Basquete</h3>
             <p>Confira as últimas notícias sobre o mundo do basquetebol, aqui você encontra novidades da NBA, NBB e
                 etc....</p>
         </div>
-        <div id="conteudo_futebolAmericano" class="flex">
+        <div id="conteudo_futebolAmericano" class="flex ancoras">
             <h3>Futebol Americano</h3>
             <p>Fique por dentro do esporte da bola oval, no MixSports você encontrará notícias e novidades sobre a NFL e
                 muito mais!</p>
         </div>
-        <div id="conteudo_futebol" class="flex">
+        <div id="conteudo_futebol" class="flex ancoras">
             <h3>Futebol</h3>
             <p>Confira as notícias do esporte mais famoso do mundo, aqui você encontra notícias e informações de ligas,
                 jogadores e clubes de todo o mundo!</p>
             </p>
         </div>
-        <div id="conteudo_golfe" class="flex">
+        <div id="conteudo_golfe" class="flex ancoras">
             <h3>Golfe</h3>
             <p>Saiba mais sobre um dos esportes onde precisa ter muita paciência, habilidade e agilidade! Aqui você fica
                 por dentro de tudo que envolve o golfe.</p>
         </div>
-        <div id="conteudo_beisebol" class="flex">
+        <div id="conteudo_beisebol" class="flex ancoras">
             <h3>Beisebol</h3>
             <p>Fique por dentro de todas as novidades da MLB (Major League Beisebol), esporte emocionante e divertido!
             </p>
         </div>
-        <div id="conteudo_sobreNos" class="flex">
+        <div id="conteudo_sobreNos" class="flex ancoras">
             <h3>Sobre Nós</h3>
             <p>Somos uma página especializada em notícias de esportes, dentro do nosso site você encontra desde o
                 futebol até o golfe! Nascemos no ano de 2014 no intuito de trazer notícias rápidas e práticas para
@@ -77,6 +86,8 @@ HTML HOME ------------------------------------------------------------------
         </div>
         </div>
     </section>
+
+    <!-- Conteúdo final do site com avaliação e redes sociais -->
 
     <div id="conteudo_final" class="flex">
         <div id="embrulho-final" class="wrapper">
@@ -106,17 +117,34 @@ HTML HOME ------------------------------------------------------------------
         </div>
     </div>
 </body>
+
+<!-- Rodapé com copyright-->
+
 <footer>
     <p> Copyright 2014 - 2022 MixSports &copy;</p>
 </footer>
 
 </html>
 
-</html>
-
 CSS HOME -------------------------------------------------------------------------------
 
+/* Link do Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+/* Scroll-Behavior */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Ancoras do jeito certo */
+
+.ancoras{
+    padding-top: 300px;
+}
+
+/* Zerando a definição dos atributos */
 
 *{
     margin: 0;
@@ -133,6 +161,8 @@ i{
     margin: 5px
 }
 
+/* Embrulho e flex-box */
+
 .wrapper{
     width: 90%;
     max-width: 1440px;
@@ -144,12 +174,14 @@ i{
     align-items: center;
 }
 
+/* Estilizando o cabeçalho */
+
 #cabecalho {
     padding: 32px 0;
     color: #fff;
     background-color: #183153;
     position: sticky;
-    top: 0;
+    top: 0px;
 
 }
 
@@ -171,10 +203,14 @@ i{
     opacity: 0.7;
 }
 
+/* Cor do body */
+
 body{
     background-color: #5a5a5a;
     background: linear-gradient(90deg, #222222e3 100%, #202020e1 100%);
 }
+
+/* Estilizando a seção artigos do site*/
 
 #secao-artigos{
     padding: 0px 220px;
@@ -248,65 +284,15 @@ body{
     text-align: center;;
 }
 
-#conteudo_final{
-    background-image: url(./img/image\ Rodapé.png);
-    width: 100%;
-    height: 810px;
-    background-size: cover;
+#secao-artigos h3{
+    font-size: 48px;
 }
 
-#conteudo_final > #estrelas_avaliacao{
-    flex-wrap:  wrap;
-    align-content: flex-end;
-   
+#secao-artigos p{
+    font-size: 24px;
 }
 
-#estrelas_avaliacao > h4{
-    color: #fff;
-    font-family: 'Red Rose', cursive;
-    font-size: 26;
-    
-}
-
-#embrulho-final{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#estrelas_avaliacao > i{
-    color: #F9AB50;
-}
-
-#redes_sociais > a{
-    color: #fff;
-}
-
-
-
-h3{
-    font-family: 'Red Rose', cursive;
-    font-size: 600;
-    color: #fff; 
-     
-}
-
-p{
-    font-family: 'Red Rose', cursive;
-    font-size: 60;
-    color: #fff;
-}
-
-footer{
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'Red Rose', cursive;
-    color: #fff;
-    background-color: #183153;
-}
-
-#conteudo_basquete > h3{
+/* #conteudo_basquete > h3{ 
     font-size: 48px;
 }
 
@@ -346,12 +332,51 @@ footer{
     font-size: 24px;
 }
 
-#conteudo_sobreNos > h3{
+*/
+
+#conteudo_sobreNos > h3{ 
     font-size: 60px;
 }
 
 #conteudo_sobreNos > p{
     font-size: 30px;
+} 
+
+/* Estilizando o contéudo final do site */
+
+#conteudo_final{
+    background-image: url(./img/image\ Rodapé.png);
+    width: 100%;
+    height: 810px;
+    background-size: cover;
+}
+
+#conteudo_final > #estrelas_avaliacao{
+    flex-wrap:  wrap;
+    align-content: flex-end;
+   
+}
+
+#estrelas_avaliacao > h4{
+    color: #fff;
+    font-family: 'Red Rose', cursive;
+    font-size: 26;
+    
+}
+
+#embrulho-final{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#estrelas_avaliacao > i{
+    color: #F9AB50;
+}
+
+#redes_sociais > a{
+    color: #fff;
 }
 
 #paragrafo_final > h3{
@@ -390,7 +415,34 @@ color: #F82CB3;
     color: #FF0707;
 }
 
+/* Estilizando as fontes do site */
+
+h3{
+    font-family: 'Red Rose', cursive;
+    font-size: 600;
+    color: #fff; 
+     
+}
+
+p{
+    font-family: 'Red Rose', cursive;
+    font-size: 60;
+    color: #fff;
+}
+
+/* Estilizando o rodapé do site */
+
+footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Red Rose', cursive;
+    color: #fff;
+    background-color: #183153;
+}
+
 HTML CONTATO ---------------------------------------------------------------
+
+<!-- Links, titulo e etc.. -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -402,6 +454,9 @@ HTML CONTATO ---------------------------------------------------------------
     <title>MixSports - Contatos</title>
     <link rel="stylesheet" href="./contatos.css">
 </head>
+
+<!--  Cabeçalho do Site -->
+
 <header id="cabecalho">
     <nav class="wrapper flex">
         <div class="flex">
@@ -416,23 +471,30 @@ HTML CONTATO ---------------------------------------------------------------
                 <a href="./index.html">
                     <h3 id="logo">MixSports</h3>
                 </a>
-                <!-- <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a> -->
+                <!-- <a href="#conteudo_basquete"><i class="fa-solid fa-basketball"></i></a>  -->
                 <!-- <a href="#conteudo_futebolAmericano"><i class="fa-solid fa-football"></i></a> -->
-                <!-- <a href="#conteudo_futebol"><i class="fa-solid fa-futbol"></i></a> -->
+                <!-- <a href="#conteudo_futebol"><i class="fa-solid fa-futbol"></i></a>  -->
                 <!-- <a href="#conteudo_golfe"><i class="fa-solid fa-golf-ball-tee"></i></a> -->
-                <!-- <a href="#conteudo_beisebol"><i class="fa-solid fa-baseball"></i></a> -->
+                <!-- <a href="#conteudo_beisebol"><i class="fa-solid fa-baseball"></i></a>  -->
             </div>
         </div>
         <div class="flex">
-            <a class="btn" href="#">
+            <a class="btn" href="./contatos.html">
                 <i class="fa-solid fa-envelope"></i>
                 <h3>Contatos</h3>
             </a>
         </div>
     </nav>
 </header>
+
+
+<!--  Corpo do Site -->
+
 <body>
     <main>
+
+        <!-- Seção de contato  -->
+
     <section id="secao_contato" class="wrapper">
         <div class="textos_contato">
             <h2>Entre em contato!</h2>
@@ -463,6 +525,8 @@ HTML CONTATO ---------------------------------------------------------------
 </main>
 </body>
 
+<!-- Rodapé com copyright-->
+
 <footer>
     <p> Copyright 2014 - 2022 MixSports &copy;</p>
 </footer>
@@ -470,7 +534,11 @@ HTML CONTATO ---------------------------------------------------------------
 
 CSS CONTATO -------------------------------------------------------------------------------------------------------------
 
+/* Link do Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+/* Zerando a definição dos atributos */
 
 *{
     margin: 0;
@@ -487,6 +555,8 @@ i{
     margin: 5px
 }
 
+/* Embrulho e flex-box */
+
 .wrapper{
     width: 90%;
     max-width: 1440px;
@@ -498,7 +568,38 @@ i{
     align-items: center;
 }
 
-/* COPIADO DO PROF */
+/* Cabeçalho do site */
+
+#cabecalho {
+    padding: 32px 0;
+    color: #fff;
+    background-color: #183153;
+    position: sticky;
+    top: 0;
+
+}
+
+.btn{
+    font-family: 'Red Rose', cursive;
+    color: #183153;
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.btn > h3{
+    color: #183153;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+
+/* Titulo e Paragrafo do site */
 
 .textos_contato>h2 {
     color: #183153;
@@ -511,6 +612,8 @@ i{
     color: #183153;
     font-size: 18px;
 }
+
+/* Estilização do Formulário do site */
 
 #form_contato {
     margin-top: 64px;
@@ -566,6 +669,8 @@ input::placeholder, textarea::placeholder {
     color: #183153;
 }
 
+/* Botão de enviar */
+
 #btn_enviar {
     padding: 22px 42px;
     font-size: 18px;
@@ -581,37 +686,7 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
 }
 
-/* COPIADO DO PROF */
-
-
-
-
-#cabecalho {
-    padding: 32px 0;
-    color: #fff;
-    background-color: #183153;
-    position: sticky;
-    top: 0;
-
-}
-
-.btn{
-    font-family: 'Red Rose', cursive;
-    color: #183153;
-    background-color: #fff;
-    padding: 10px 22px;
-    border-radius: 5px;
-    font-size: 20px;
-    display: flex;
-    width: fit-content;
-}
-
-.btn > h3{
-    color: #183153;
-}
-.btn:hover{
-    opacity: 0.7;
-}
+/* Estilizando o rodapé do site */
 
 footer{
     text-align: center;
@@ -620,6 +695,8 @@ footer{
     color: #fff;
     background-color: #183153;
 }
+
+/* Estilizando as fontes do site */
 
 h3{
     font-family: 'Red Rose', cursive;
@@ -635,8 +712,11 @@ p{
     color: #fff;
 }
 
+/* Estilizando a tela total do site */
+
 main{
     min-height: 82.1vh;
     padding: 80px;
 }
+
 
